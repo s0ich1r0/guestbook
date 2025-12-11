@@ -1,0 +1,116 @@
+:root {
+    --bg-primary: #0a0a0f;
+    --bg-secondary: #1a1410;
+    --bg-tertiary: #2a1f1a;
+    --stone: #3a2820;
+    --gold: #d4af37;
+    --gold-bright: #ffa500;
+    --text: #d4c5a9;
+    --text-dim: #a89378;
+}
+
+/* Main container & iframe */
+.giscus, .giscus-frame {
+    font-family: 'Press Start 2P', cursive !important;
+    background: var(--bg-primary) !important;
+    color: var(--text) !important;
+    border: 6px double var(--gold) !important;
+    box-shadow: 0 0 30px var(--gold-bright), inset 0 0 20px rgba(0,0,0,0.7) !important;
+}
+
+/* Comment cards */
+.gsc-comments > div,
+.gsc-comment {
+    background: var(--stone) !important;
+    border: 4px solid var(--gold) !important;
+    box-shadow: 0 0 20px rgba(255,165,0,0.4) !important;
+    margin: 20px 0 !important;
+    padding: 16px !important;
+    border-radius: 0 !important;
+}
+
+/* Username & timestamp */
+.gsc-header a,
+.gsc-timeline time,
+.gsc-comment-author {
+    color: var(--gold-bright) !important;
+    text-shadow: 0 0 10px var(--gold-bright) !important;
+    font-size: 11px !important;
+}
+
+/* Comment text */
+.gsc-comment-content {
+    color: var(--text) !important;
+    line-height: 1.8 !important;
+}
+.gsc-comment-content a {
+    color: var(--gold) !important;
+    text-decoration: underline !important;
+}
+
+/* Reply / Load more buttons */
+.gsc-reply-button,
+.gsc-load-more button {
+    background: var(--stone) !important;
+    color: var(--gold-bright) !important;
+    border: 4px solid var(--gold) !important;
+    font-family: 'Press Start 2P', cursive !important;
+    padding: 8px 14px !important;
+    transition: all 0.3s !important;
+}
+.gsc-reply-button:hover,
+.gsc-load-more button:hover {
+    background: var(--gold) !important;
+    color: var(--bg-primary) !important;
+    box-shadow: 0 0 25px var(--gold-bright) !important;
+}
+
+/* Textarea & input */
+.gsc-reply-box textarea,
+.gsc-reply-box input {
+    background: var(--bg-secondary) !important;
+    color: var(--text) !important;
+    border: 4px solid var(--gold) !important;
+    font-family: 'Press Start 2P', cursive !important;
+    font-size: 12px !important;
+    padding: 12px !important;
+}
+
+/* Submit button */
+.gsc-reply-box button[type="submit"] {
+    background: var(--stone) !important;
+    color: var(--gold-bright) !important;
+    border: 5px double var(--gold) !important;
+    padding: 10px 20px !important;
+    font-family: 'Press Start 2P', cursive !important;
+    cursor: pointer;
+}
+.gsc-reply-box button[type="submit"]:hover {
+    background: var(--gold) !important;
+    color: var(--bg-primary) !important;
+    box-shadow: 0 0 30px var(--gold-bright) !important;
+    transform: translateY(-2px);
+}
+
+/* Header (“X comments”) */
+.gsc-header {
+    background: linear-gradient(135deg, var(--stone), var(--bg-primary)) !important;
+    border-bottom: 6px double var(--gold) !important;
+    color: var(--gold-bright) !important;
+    text-shadow: 0 0 15px var(--gold-bright) !important;
+    padding: 16px !important;
+    text-align: center !important;
+    font-size: 13px !important;
+    letter-spacing: 2px;
+}
+
+/* Reactions */
+.gsc-reactions button {
+    background: var(--bg-secondary) !important;
+    border: 3px solid var(--gold) !important;
+    color: var(--gold-bright) !important;
+}
+.gsc-reactions button:hover {
+    background: var(--gold) !important;
+    color: var(--bg-primary) !important;
+}
